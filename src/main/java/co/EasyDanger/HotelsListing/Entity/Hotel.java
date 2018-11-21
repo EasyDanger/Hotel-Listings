@@ -9,15 +9,20 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "hotel_listing")
-public class Hotel  {
+public class Hotel {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="hotel_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "hotel_id")
 	private Long id;
-	@Column(name="hotel_name")
+	@Column(name = "hotel_name")
 	private String name;
 	private String city;
+	// Personally, i just kind of think city names look silly by themselves on
+	// things like this without a state next to them. So, I added a state field. But
+	// wait ... why not just add it to the city name field? That could get a bit
+	// unwieldy later on when all I want is a short variable, ya know? Like in a
+	// JSP?
 	private String state;
 	private Integer pricePerNight;
 

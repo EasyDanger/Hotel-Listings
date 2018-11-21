@@ -15,7 +15,6 @@
 <title>This is an index.</title>
 </head>
 <body>
-
 	<h2>Hotel Search</h2>
 	<form
 		action="/hotels"
@@ -27,7 +26,8 @@
 				var="item"
 				items="${ Both }"
 			>
-				<option value="${ item[0] }">${ item[0] },${ item[1] }</option>
+				<%--Hey, here was a neat idea! Instead of hardcoding in the names of the cities and states of the hotels, why not make it programmatic? So, I made a list to represent each city and state, and iterated that list inside the option tags. Now, whenever I add a city to the database, this list automatically updates! But wait! Have you been to the HotelsDao, yet? Is that an array on the next line? What's going on here? --%>
+				<option value="${ item[0] }">${ item[0] }, ${ item[1] }</option>
 			</c:forEach>
 		</select>
 		<button>Search by City!</button>

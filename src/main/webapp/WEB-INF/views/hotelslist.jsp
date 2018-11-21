@@ -43,12 +43,12 @@
 		method="post"
 	>
 		<select name="City">
-			<option value="all">All cities</option>
+			<option value="All">All cities</option>
 			<c:forEach
 				var="item"
 				items="${ Both }"
 			>
-				<option value="${ item[0] }">${ item[0] },${ item[1] }</option>
+				<option value="${ item[0] }">${ item[0] }, ${ item[1] }</option>
 			</c:forEach>
 		</select>
 		<button>Search by City!</button>

@@ -18,7 +18,7 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<th>Hotal Name</th>
+				<th>Hotel Name</th>
 				<th>City</th>
 				<th>State</th>
 				<th>Price Per Night</th>
